@@ -22,6 +22,8 @@ users_{{ name }}_user_profile:
     - mode: 644
     - source:
       - salt://users/files/profile/{{ name }}/profile
+      - salt://users/files/profile/{{ name }}
+      - salt://users/files/{{ name }}/profile
       - salt://users/files/profile/profile
 {% endif %}
 {% endfor %}

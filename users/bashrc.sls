@@ -22,6 +22,8 @@ users_{{ name }}_user_bashrc:
     - mode: 644
     - source: 
       - salt://users/files/bashrc/{{ name }}/bashrc
+      - salt://users/files/bashrc/{{ name }}
+      - salt://users/files/{{ name }}/bashrc
       - salt://users/files/bashrc/bashrc
 {% endif %}
 {% endfor %}

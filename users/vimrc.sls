@@ -23,6 +23,8 @@ users_{{ name }}_user_vimrc:
     - mode: 644
     - source: 
       - salt://users/files/vimrc/{{ name }}/vimrc
+      - salt://users/files/vimrc/{{ name }}
+      - salt://users/files/{{ name }}/vimrc
       - salt://users/files/vimrc/vimrc
 {% endif %}
 {% endfor %}
